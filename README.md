@@ -1,6 +1,6 @@
 # Adler32
 
-TODO: Write a gem description
+A Ruby implementation of Adler-32 checksum algorithm
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "adler32"
+
+# with single value
+Adler32.checksum 'abc' # => "024d0127"
+
+# multiple arguments can be handled
+Adler32.checksum 'abc', 'def' # => "081e0256"
+```
 
 ## Contributing
 

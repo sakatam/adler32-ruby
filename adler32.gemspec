@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["maco.sakata@gmail.com"]
   spec.summary       = "A Ruby implementation of Adler-32 checksum algorithm"
   spec.description   = "see http://en.wikipedia.org/wiki/Adler-32 for the algorithm details"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sakatam/adler32-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
