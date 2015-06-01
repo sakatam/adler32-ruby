@@ -1,4 +1,5 @@
 # Adler32
+![](https://travis-ci.org/sakatam/adler32-ruby.svg)
 
 A Ruby implementation of Adler-32 checksum algorithm
 
