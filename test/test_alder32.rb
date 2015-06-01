@@ -11,6 +11,7 @@ class Adler32Test < Minitest::Test
     assert_equal '00000001', Adler32.checksum('')
     # no args
     assert_equal '00000001', Adler32.checksum()
+    assert_throws(ArgumentError) { Adler32.checksum(123) }
 
     # long string
     long = 'long'

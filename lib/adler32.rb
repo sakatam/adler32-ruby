@@ -10,8 +10,10 @@ module Adler32
       b = 0
       c = 1000
 
-      args.each do |data|
-        data.each_char do |char|
+      args.each do |str|
+        throw ArgumentError, "Only string can be passed: #{str.inspect}:#{str.class}" unless str.is_a? String
+
+        str.each_char do |char|
           a += char.ord
           b += a
           c -= 1
